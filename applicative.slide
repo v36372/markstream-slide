@@ -1,0 +1,117 @@
+
+An application of audio data hiding: radio broadcast as a high utility service.
+Graduation thesis defense.
+20 Aug 2016
+Tags: data hiding, advertising, watermarking
+
+Trong-Tin Nguyen
+Advanced Program in Computer Science
+nttin@apcs.vn
+https://github.com/v36372
+@v36372
+
+* Introduction
+
+* The fast growing Internet
+
+For many recent years, the Internet has been expanding constantly in both size and velocity.
+
+- There are nearly 3.5 billion internet users at the moment 
+- In 1995, only 1% of the world population has an internet connection. This portion has been increasing non-stop since then and reached 40% today.
+
+.link http://www.internetlivestats.com/internet-users/ According to Internet Live Stats
+
+It is the foundation for the booming of many new businesses like Internet radio broadcasting.
+
+* Internet radio broadcasting
+
+A newly discovered area of media in recent years.
+
+Depart from the traditional radio broadcasting by AM/FM, the internet is utilized as the environment for media content to be transfered.
+
+By simple configured as a mere stream of data, the broadcasting is packed and defined nicely inside of just an internet link address. Which then can be passed around in the community for anyone interested.
+
+The best part is anyone with an internet connection can access this stream of media.
+
+Its properties of flexible and compact setup allows the streaming to be up and running very fast, create space for other time-comsuming process like creating content.
+
+It appears that internet radio is accepted by audience when reports say 57% of the 12-and-older U.S population listen
+to internet radio monthly. And by that means, this is an area worth investing in when it has such a large audience base.
+
+* Advertising on Internet radio
+
+As more and more people use internet, the capacity of user base also enlarges.
+
+Many would try to capitalize on that huge audience base and in turn raise the effectiveness of their business, by bring promotions to as many listener as possible, in other words, advertising.
+
+The advertising business on Internet radio is also on the rise with the number of unique advertisers grew by 5.4x over the course of the year with large increases for both national and local advertisers accessing the channel.
+
+* Advertising difficulties
+
+There is a classic obstacle that every advertisers face. To increase audience engagement as many as possible. To
+do that, advertisers often try to add more content surround the actual advertisement, help audience choose their
+ product.
+
+For internet radio advertising, the only resource is the stream of audio data being sent to clients. It becomes very
+important to maintain the simplicity of the inner network, while it is possible to upgrade nodes at end
+ user to achieve the goal above.
+
+Therefore, the question arises that how can we augement the advertisement without further complicating the streaming technology?
+
+* Audio watermarking
+
+Audio watermarking is a technique able to embed information into actual audio content without breaking the sound quality of the host signal. The primary property of audiowatermarking is that the embedded data is transparent to perception of human on audio content. 
+
+We exploit this advantage to devolope a novel system for enhancing the advertising 
+function of radio broadcast services.
+
+* Proposed Solution
+
+* Vision
+
+We'd like to setup a server to constantly stream audio data to the Internet. While any client application connect to our port would receive and play sound.
+
+The game-changing point happens when we encounter an advertisement. On the server, we would employ audio data hiding and embedd advertising data into the audio stream and send to clients as normal. 
+
+On the other hand, the clients would extract and display useful advertising information while the advertisement itself is served to audience.
+
+* Engineering choices
+
+We choose Golang as the primary programming language to illustrate our idea. It is fast, easy to write and understand.
+
+For the front end of our project, we would like it to be up and running as fast as possible, we chose Javascript to implement a simple web application to receive and process data from the server, which is implemented in Golang.
+
+For the server and client to communicate, we establish a websocket connection that lives until the client disconects.
+
+* System Implementation
+
+* Server application
+
+We have our setup simplified by dividing into modules responsible for a particular reason.
+
+.image system.svg
+
+* Audio watermarking intergated into the server
+
+Audio data hiding based on dynamic phase coding. The method revolves around the encoding method of quantization index modulation.
+
+The game changing point is where we use many step sizes for corresponding frequencies instead a fixed constant for all ranges of frequecies.
+
+.code QIM_illustrate.go
+
+* Client application
+
+Simple Javascript make the implementation of client application straightforward and easy to understand.
+
+.code Frontend_illustrate.js
+
+* System evaluation
+
+Going back to the original cause of enhancing audience engagement with internet radio advertising, we would like to evaluate our complete system against this feature.
+
+By recording and compare the amount of user interaction with normal advertisements and our augmented ads, it can reveal many insights about how our system changes the way people perceive ads.
+
+* Project Demo
+
+* References
+
