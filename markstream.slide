@@ -2,13 +2,12 @@
 An application of audio data hiding: radio broadcast as a high utility service.
 Graduation thesis defense.
 20 Aug 2016
-Tags: data hiding, advertising, watermarking
+Tags: audio data hiding, advertising, watermarking
 
 Trong-Tin Nguyen
 Advanced Program in Computer Science
 nttin@apcs.vn
 https://github.com/v36372
-@v36372
 
 * Introduction
 
@@ -35,8 +34,7 @@ The best part is anyone with an internet connection can access this stream of me
 
 Its properties of flexible and compact setup allows the streaming to be up and running very fast, create space for other time-comsuming process like creating content.
 
-It appears that internet radio is accepted by audience when reports say 57% of the 12-and-older U.S population listen
-to internet radio monthly. And by that means, this is an area worth investing in when it has such a large audience base.
+It appears that internet radio is accepted by audience when reports say 57% of the 12-and-older U.S population listen to internet radio monthly. And by that means, this is an area worth investing in when it has such a large audience base.
 
 * Advertising on Internet radio
 
@@ -48,22 +46,21 @@ The advertising business on Internet radio is also on the rise with the number o
 
 * Advertising difficulties
 
-There is a classic obstacle that every advertisers face. To increase audience engagement as many as possible. To
-do that, advertisers often try to add more content surround the actual advertisement, help audience choose their
- product.
+There is a classic obstacle that every advertisers face. To increase audience engagement as many as possible. To do that, advertisers often try to add more content surround the actual advertisement, help audience choose their product.
 
-For internet radio advertising, the only resource is the stream of audio data being sent to clients. It becomes very
-important to maintain the simplicity of the inner network, while it is possible to upgrade nodes at end
- user to achieve the goal above.
+For internet radio advertising, the only resource is the stream of audio data being sent to clients. It becomes very important to maintain the simplicity of the inner network, while it is possible to upgrade nodes at end user to achieve the goal above.
 
-Therefore, the question arises that how can we augement the advertisement without further complicating the streaming technology?
+Therefore, the question arises that how can we augement the advertisement with extra information when our bandwidth is limited by a stream of audio data?
 
 * Audio watermarking
 
 Audio watermarking is a technique able to embed information into actual audio content without breaking the sound quality of the host signal. The primary property of audiowatermarking is that the embedded data is transparent to perception of human on audio content. 
 
-We exploit this advantage to devolope a novel system for enhancing the advertising 
-function of radio broadcast services.
+We exploit this advantage to develope a novel system for enhancing the advertising function of radio broadcast services.
+
+* Audio watermarking (.cont)
+
+.image watermarkingprocess.svg
 
 * Proposed Solution
 
@@ -99,7 +96,11 @@ The game changing point is where we use many step sizes for corresponding freque
 
 .code QIM_illustrate.go
 
-* Client application
+* Client application setup
+
+.image client.svg
+
+* Client application receives audio data from the server
 
 Simple Javascript make the implementation of client application straightforward and easy to understand.
 
@@ -115,3 +116,4 @@ By recording and compare the amount of user interaction with normal advertisemen
 
 * References
 
+.link http://golang.org/ Golang
