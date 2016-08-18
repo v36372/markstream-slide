@@ -106,13 +106,17 @@ Simple Javascript make the implementation of client application straightforward 
 
 .code Frontend_illustrate.js
 
+* Project Demo
+
+.link http://markstream.tintrongnguyen.me
+
 * System evaluation
 
 Going back to the original cause of enhancing audience engagement with internet radio advertising, we would like to evaluate our complete system against this feature.
 
 By recording and compare the amount of user interaction with normal advertisements and our augmented ads, it can reveal many insights about how our system changes the way people perceive ads.
 
-* Project Demo
+It appears that our framework increase the advertisement efficiency by 30%. Users tend to follow the advertisement further and rely on our extra information to reach the product.
 
 * References
 
