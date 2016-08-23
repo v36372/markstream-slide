@@ -86,6 +86,14 @@ The larger the magnitude spectrum, the lower the step side.
 
 .code QIM_illustrate.go
 
+* Audio watermarking | Experiments
+
+After trying many settings with different trade-offs, we came to an optimal set of parameters suitable for our particular application.
+
+.code final-parameter.go
+
+Notice the variable BIT_REPEAT, this variable is used to increase the correctness of our embedding algorithm, by repeating each embedding by 5 times.
+
 * Proposed Internet Radio Broadcasting System
 
 * Vision
