@@ -24,53 +24,77 @@ It is the foundation for the booming of many new businesses like Internet radio 
 
 * Internet radio broadcasting
 
-A newly discovered area of media in recent years.
+Reports say 57% of the 12-and-older U.S population listen to internet radio monthly. And by that means, this is an area worth investing in when it has such a large audience base.
 
-Depart from the traditional radio broadcasting by AM/FM, the internet is utilized as the environment for media content to be transfered.
-
-By simple configured as a mere stream of data, the broadcasting is packed and defined nicely inside of just an internet link address. Which then can be passed around in the community for anyone interested.
-
-The best part is anyone with an internet connection can access this stream of media.
-
-Its properties of flexible and compact setup allows the streaming to be up and running very fast, create space for other time-comsuming process like creating content.
-
-It appears that internet radio is accepted by audience when reports say 57% of the 12-and-older U.S population listen to internet radio monthly. And by that means, this is an area worth investing in when it has such a large audience base.
+.image monthly-online-listening.png 480 900 
 
 * Advertising on Internet radio
 
-As more and more people use internet, the capacity of user base also enlarges.
+The rapid growth in advertising revenue is making Internet radio a large advertising market & a critical element of overall radio ad marke
 
-Many would try to capitalize on that huge audience base and in turn raise the effectiveness of their business, by bring promotions to as many listener as possible, in other words, advertising.
-
-The advertising business on Internet radio is also on the rise with the number of unique advertisers grew by 5.4x over the course of the year with large increases for both national and local advertisers accessing the channel.
+.image internet-radio-revenue.png 480 900
 
 * Advertising difficulties
 
 There is a classic obstacle that every advertisers face. To increase audience engagement as many as possible. To do that, advertisers often try to add more content surround the actual advertisement, help audience choose their product.
 
-For internet radio advertising, the only resource is the stream of audio data being sent to clients. It becomes very important to maintain the simplicity of the inner network, while it is possible to upgrade nodes at end user to achieve the goal above.
+.link https://drive.google.com/file/d/0B-Eg0HwuhlrzZnFyN3lmVkhBNU0/view Sample advertisement.
 
 Therefore, the question arises that how can we augement the advertisement with extra information when our bandwidth is limited by a stream of audio data?
 
 * Audio watermarking
 
-Audio watermarking is a technique able to embed information into actual audio content without breaking the sound quality of the host signal. The primary property of audiowatermarking is that the embedded data is transparent to perception of human on audio content. 
+* Audio watermarking | Introduction
 
-We exploit this advantage to develope a novel system for enhancing the advertising function of radio broadcast services.
+Audio watermarking is a technique able to embed information into audio content. The primary property of audiowatermarking is that the embedded data is transparent to perception of human on. 
 
-* Audio watermarking (.cont)
+We exploit this feature to develope a novel system for enhancing the advertising function of radio broadcast services.
+
+In specifics, we employ the audio data hiding method of dynamic phase coding, originally suggested by Dr. Ngo Minh Nhut. 
+
+.link http://www.eurasip.org/Proceedings/Eusipco/Eusipco2015/papers/1570104339.pdf Original paper.
+
+* Audio watermarking | Watermarking Processes
 
 .image watermarkingprocess.svg
 
-* Proposed Solution
+* Audio watermarking | Audio Frames
+
+Divide audio data into frames to process, employ Fourier Transform 
+
+- Keep the physics properties intact. If we apply FFT to the whole file, the resulting frequencies are not correct.
+
+- Easier for streaming purpose.
+
+* Audio watermarking | Parameters
+
+- Samples per frame or frame length
+
+- How many samples would be use for watermarking?
+
+.code watermarkingexample.go
+
+* Audio watermarking | Dynamic Phase Coding
+
+For each embedding samples, the amount of phase modification is dependent on the quantization index modulation step side.
+
+The larger the magnitude spectrum, the lower the step side.
+
+- If the array of step sizes are too small, it can cause embedding incorrectness
+
+- If the array of step sizes are too big, it can degrade  audio quality.
+
+.code QIM_illustrate.go
+
+* Proposed Internet Radio Broadcasting System
 
 * Vision
 
-We'd like to setup a server to constantly stream audio data to the Internet. While any client application connect to our port would receive and play sound.
-
-The game-changing point happens when we encounter an advertisement. On the server, we would employ audio data hiding and embedd advertising data into the audio stream and send to clients as normal. 
+We'd like to setup a server to constantly stream audio data to the Internet. The game-changing point happens when we encounter an advertisement. On the server, we would employ audio data hiding and embedd advertising data into the audio stream and send to clients as normal. 
 
 On the other hand, the clients would extract and display useful advertising information while the advertisement itself is served to audience.
+
+.image streaming_illustration.svg
 
 * Engineering choices
 
@@ -84,27 +108,13 @@ For the server and client to communicate, we establish a websocket connection th
 
 * Server application
 
-We have our setup simplified by dividing into modules responsible for a particular reason.
+We have our setup simplified by dividing into modules responsible for their specific functionalities.
 
 .image system.svg
-
-* Audio watermarking intergated into the server
-
-Audio data hiding based on dynamic phase coding. The method revolves around the encoding method of quantization index modulation.
-
-The game changing point is where we use many step sizes for corresponding frequencies instead a fixed constant for all ranges of frequecies.
-
-.code QIM_illustrate.go
 
 * Client application setup
 
 .image client.svg
-
-* Client application receives audio data from the server
-
-Simple Javascript make the implementation of client application straightforward and easy to understand.
-
-.code Frontend_illustrate.js
 
 * Project Demo
 

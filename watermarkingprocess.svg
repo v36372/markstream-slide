@@ -27,13 +27,13 @@
      inkscape:window-height="713"
      id="namedview3476"
      showgrid="false"
-     inkscape:zoom="0.50647961"
-     inkscape:cx="372.04724"
-     inkscape:cy="526.1811"
+     inkscape:zoom="1.0129592"
+     inkscape:cx="249.25588"
+     inkscape:cy="672.08477"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3407" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs3409" />
   <metadata
@@ -128,30 +128,17 @@
          x="381.90137">Phase Spectrum</tspan></text>
     <text
        id="text3464"
-       y="491.35623"
-       x="273.62631"
+       y="612.45087"
+       x="266.34317"
        style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"
        sodipodi:linespacing="125%"><tspan
-         y="491.35623"
-         x="273.62631"
+         y="612.45087"
+         x="266.34317"
          id="tspan3466">Watermarked</tspan><tspan
          id="tspan3468"
-         y="525.7312"
-         x="273.62631">Frame</tspan></text>
-    <text
-       id="text3470"
-       y="606.33826"
-       x="210.44093"
-       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"
-       sodipodi:linespacing="125%"><tspan
-         y="606.33826"
-         x="210.44093"
-         id="tspan3472">Send to</tspan><tspan
-         id="tspan3474"
-         y="640.71326"
-         x="210.44093">channel</tspan></text>
+         y="646.82587"
+         x="266.34317">Frame</tspan></text>
     <rect
        y="20.996462"
        x="178.79701"
@@ -188,8 +175,8 @@
        id="rect3486"
        style="fill:#ffffff;fill-opacity:0;stroke:#241c1c" />
     <rect
-       y="462.06186"
-       x="168.59184"
+       y="583.15649"
+       x="161.3087"
        height="74.751289"
        width="209.10158"
        id="rect3492"
@@ -239,18 +226,6 @@
        d="m 490.05025,252.06885 6.18719,5.05076"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
-    <rect
-       y="579.27905"
-       x="201.97359"
-       height="69.19545"
-       width="123.74369"
-       id="rect3522"
-       style="fill:#ffffff;fill-opacity:0;stroke:#241c1c" />
-    <path
-       id="path3524"
-       d="m 267.18535,536.67933 0,43.05404"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.02585495px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
     <path
        id="path3526"
        d="m 147.98735,288.68688 113.13708,172.73609 127.7843,-43.94164"
@@ -260,16 +235,6 @@
        id="path3528"
        d="m 372.74629,289.31451 0,41.20704"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.99144405px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <path
-       id="path3530"
-       d="m 266.93281,559.40776 -4.79822,-4.67195"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       inkscape:connector-curvature="0" />
-    <path
-       id="path3532"
-       d="m 267.56416,559.28149 4.29314,-4.41941"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
     <path
        id="path3534"
@@ -291,5 +256,49 @@
        d="m 201.02036,371.01431 -15.15229,-7.57614"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#241c1c;stroke-width:0.74258703"
+       id="rect4446"
+       width="90.323051"
+       height="44.981506"
+       x="219.409"
+       y="496.26733" />
+    <path
+       id="path3524-3"
+       d="m 259.80323,541.10711 0,42.12729"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01475406px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3530-6"
+       d="m 259.55069,562.90879 -4.79822,-4.67195"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3532-7"
+       d="m 260.18204,562.78252 4.29314,-4.41941"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3524-5"
+       d="m 260.65825,460.16125 0,35.48563"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.93133354px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3530-3"
+       d="m 260.40571,482.88968 -4.79822,-4.67195"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3532-5"
+       d="M 261.03706,482.76341 265.3302,478.344"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <text
+       id="text3464-3"
+       y="527.88617"
+       x="265.36276"
+       style="font-style:normal;font-weight:normal;font-size:27.5px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       sodipodi:linespacing="125%">IFFT</text>
   </g>
 </svg>
